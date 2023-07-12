@@ -29,7 +29,7 @@
  
     <script type="module">
      huddleClient.initialize(ZBXTaIN6HMmJ9Nw1vY5haA8LqC4KidX2);
-    huddleClient.joinLobby(X-KLNDhnUm3EPopw7o-Tlg3jW5MLMdVi);
+    huddleClient.joinLobby('YOUR_ROOM_ID');
 
     </script>
 
@@ -37,12 +37,20 @@
     huddleClient.initialize(ZBXTaIN6HMmJ9Nw1vY5haA8LqC4KidX2);
  
     document.getElementById('joinLobby').onclick = () => {
-        huddleClient.joinLobby(X-KLNDhnUm3EPopw7o-Tlg3jW5MLMdVi);
+        huddleClient.joinLobby('YOUR_ROOM_ID');
     };
  
     document.getElementById('joinRoom').onclick = () => {
         huddleClient.joinRoom();
     };
+
+     document.getElementById('enableMic').onclick = () => {
+    huddleClient.enableMic();
+  };
+ 
+  document.getElementById('enableCam').onclick = () => {
+    huddleClient.enableCam();
+  };
     </script>
 
     <!-- End Region-->
