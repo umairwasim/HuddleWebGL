@@ -49,6 +49,7 @@
         <video id="my-video" autoplay muted></video>
     </div>
     <!-- End region-->
+
     <!-- Region HuddleTestTask-->
     <script src="https://unpkg.com/@huddle01/web-core@latest/dist/huddle01-web-core.umd.min.js"></script>
 
@@ -61,7 +62,6 @@
 
             console.log({ stream });
         };
-
         huddleClient.on("lobby:cam-on", (stream) => {
             console.log({ stream });
             videoElem.srcObject = stream;
@@ -89,8 +89,7 @@
 
         console.log({ huddleClient });
     </script>
-
-    <!-- Walkthrough
+    <!-- Walkthrough-
     <script type="module">
         huddleClient.initialize("ZBXTaIN6HMmJ9Nw1vY5haA8LqC4KidX2");
         huddleClient.joinLobby("spu-uesg-dut");
@@ -130,7 +129,8 @@
             huddleClient.produceCam();
         };
     </script>
-     END Walkthrough-->
+    END Walkthrough-->
+
     <!-- End Region-->
 
     <script>
