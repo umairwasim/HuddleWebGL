@@ -23,39 +23,6 @@
         <div id="unity-build-title">HuddleTestTask</div>
       </div>
     </div>
-
-    <!-- Region HuddleTestTask  
-    <script src="https://unpkg.com/@huddle01/web-core@latest/dist/huddle01-web-core.umd.min.js" />
- 
-    <script type="module">
-     huddleClient.initialize(ZBXTaIN6HMmJ9Nw1vY5haA8LqC4KidX2);
-    huddleClient.joinLobby('YOUR_ROOM_ID');
-
-    </script>
-
-    <script>
-    huddleClient.initialize(ZBXTaIN6HMmJ9Nw1vY5haA8LqC4KidX2);
- 
-    document.getElementById('joinLobby').onclick = () => {
-        huddleClient.joinLobby('YOUR_ROOM_ID');
-    };
- 
-    document.getElementById('joinRoom').onclick = () => {
-        huddleClient.joinRoom();
-    };
-
-     document.getElementById('enableMic').onclick = () => {
-    huddleClient.enableMic();
-  };
- 
-  document.getElementById('enableCam').onclick = () => {
-    huddleClient.enableCam();
-  };
-    </script>
-
-    <!-- End Region-->
-
-
     <script>
 
       var container = document.querySelector("#unity-container");
@@ -90,13 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL.loader.js";
+      var loaderUrl = buildUrl + "/HuddleWebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGL.wasm.unityweb",
+        dataUrl: buildUrl + "/HuddleWebGL.data.unityweb",
+        frameworkUrl: buildUrl + "/HuddleWebGL.framework.js.unityweb",
+        codeUrl: buildUrl + "/HuddleWebGL.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "Huddle",
         productName: "HuddleTestTask",
         productVersion: "0.1",
         showBanner: unityShowBanner,
@@ -149,17 +116,6 @@
             };
 
       document.body.appendChild(script);
-
-      // Function to call a Unity method
-    /*
-    function CallUnityMethod() {
-        // Check if the UnityInstance exists
-        if (typeof UnityInstance !== 'undefined') {
-            // Call a method in Unity
-            UnityInstance.SendMessage('GameObjectName', 'MethodName', 'OptionalParameter');
-        }
-    } 
-    */
 
     </script>
   </body>
